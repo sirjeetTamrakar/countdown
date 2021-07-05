@@ -1,0 +1,133 @@
+.form{
+    width:80%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    border-radius: 2rem;
+    margin-top: 4rem;
+    height:80vh;
+    position: relative;
+    background-color: white;
+    color: #6648fc;
+}
+
+.imgBg{
+    background:linear-gradient(To Right, #83D69F, #D14BED);
+    border-radius: 2rem;
+    outline: none;
+    border: none;
+}
+
+.bg{
+    background:linear-gradient(To Left top, #9796f0, #f792ab);
+    height:70vh;
+    width: 100%;
+    position: absolute;
+    top: 25rem;
+    z-index: -1;
+    border-top-left-radius: 2rem;
+}
+.w{
+    display: flex;
+    flex-direction: column;
+    width:80%;
+    padding-left: 2rem;
+    margin-top: 2rem;
+    justify-content: space-evenly;
+}
+
+input{
+    text-decoration: none;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: none;
+    outline: none;
+    color: #5d3efc;  
+}
+
+.head{
+    color:#4724f7;
+    text-align: center;
+}
+
+input[type=text]{
+    background: none;
+    border-bottom: 2px solid #6648fc;
+    font-size:x-large;
+    font-weight: 400;
+    font-family: monospace;
+    
+}
+
+::placeholder{
+    color: #9681ff;
+}
+
+input[type=date]{
+    width: 80%;
+    border-radius: 1rem;
+    margin: 1rem 0rem;
+    color: #6648fc;
+    border: 2px solid #6648fc;
+}
+
+.imgForm{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2rem;
+    opacity: .8;   
+    transition: all .4s ease-in-out;
+}
+
+.imgForm:hover{
+    opacity: 1;
+    transition: all .4s ease-in-out;
+}
+
+.submit{
+    width:5rem;
+    border-radius: 1rem;
+    margin: 1rem 0.6rem;
+}
+
+.clear{
+    color: white !important;
+    background-color: #a260d8 !important;
+    margin: 1rem 0rem;
+}
+
+@media screen and (max-width:700px) {
+    .form{
+        width:80%;
+        display: flex;
+        justify-content: center;
+        padding: 1rem;
+        box-shadow: -2px -2px 5px #cecece;
+        border-radius: 2rem;
+        height: 90%;
+        border-radius: 0.8rem;
+    }
+    .w{
+        width: 80%;
+        padding-left: 0rem;
+        justify-content: none;
+    }
+    .imgForm{
+        display: none;
+    }
+    input{
+        color: #6648fc;
+    }
+    input[type=text]{
+        border-bottom: 2px solid #6648fc;
+    }
+    input[type=date]{
+        border: none;
+    }
+    ::placeholder{
+        color: #9681ff;
+    }
+    .bg{
+        height: 50vh;
+    }
+}
